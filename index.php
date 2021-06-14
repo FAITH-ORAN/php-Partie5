@@ -28,7 +28,7 @@ $newPage1=fopen("condition.php","a+");
 fclose($newPage1);
 ?>
 
-<a href="condition.php?nom=Berrichi&prenom=Faiza&age=100">lien</a>
+<a href="condition.php?nom=Berrichi&prenom=Faiza&age=AA">lien</a>
 
 
 <h3 style="color:red;">Exercice 4:</h3>
