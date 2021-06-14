@@ -60,8 +60,9 @@ fclose($newPage4);
 ?>
 
 <a href="server2.php?langage=<?php
-echo strip_tags("<h1 style='color:red;'>PHP</h1>");
-
+$var=strip_tags("PHP");
+htmlspecialchars($var);
+echo $var;
 ?>&serveur=<?php
  echo $_SERVER["HTTP_HOST"]
 ?>">
