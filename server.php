@@ -1,13 +1,8 @@
 <?php
-$serv=$_GET["serveur"];
 
-function getError($serv){
-  if( $serv==$_SERVER["HTTP_HOST"]){
-    return" langage :".$_GET["langage"]."serveur: ".$serv;//d'abord on cree une fonction simple
-  }else{
-    echo"erreur";
-  }
-}
-  echo getError($serv);
- 
+  if(($_GET["serveur"])==$_SERVER["HTTP_HOST"]){
+    echo " langage :".$_GET["langage"]."serveur: ".$_GET["serveur"];}
+  else{
+  echo "erreur";}
+    
 ?>
